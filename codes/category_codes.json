@@ -1,0 +1,9 @@
+{
+    "all": "all",
+    "business": "b",
+    "sports": "s",
+    "entertainment": "e",
+    "health": "m",
+    "sci/tech": "t",
+    "top_stories": "h"
+}
