@@ -6,7 +6,6 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 from bs4 import BeautifulSoup
 import json
-import re
 
 def setDriver(executable_path):
     chrome_options = webdriver.ChromeOptions()
