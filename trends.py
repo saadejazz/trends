@@ -7,10 +7,14 @@ from selenium import webdriver
 from bs4 import BeautifulSoup
 import json
 
-def setDriver(executable_path):
+def setDriver(executable_path, headless = False, maximize = True):
     chrome_options = webdriver.ChromeOptions()
     prefs = {"profile.default_content_setting_values.notifications" : 2}
     chrome_options.add_experimental_option("prefs",prefs)
+    if maximize:
+        chrome_options.add_argument("--start-maximized")
+    if headless:
+        chrome_options.add_argument("--headless")
     return webdriver.Chrome(executable_path = executable_path, chrome_options=chrome_options)
 
 def getTrendsList(elements, extractGroup):
