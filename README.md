@@ -5,6 +5,12 @@ Provides simple data from two types of trends from [Google Trends](https://trend
 
 Because this is based on [Selenium](https://github.com/SeleniumHQ/selenium), it requires a webdriver. The webdriver chosen for this code is the chromedriver which can be downloaded from [here](https://chromedriver.chromium.org/downloads).  
 
+### Requirements  
+Install the following packages using pip: 
+```bash
+pip install selenium && pip install bs4
+```
+
 ### Usage:  
 ```python
 import trends
